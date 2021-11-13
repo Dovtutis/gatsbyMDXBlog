@@ -1,0 +1,71 @@
+---
+frontmatter:
+---
+
+import { Link } from 'gatsby';
+import { FiInfo } from 'react-icons/fi';
+import { Counter, LikeButton, RegVideo } from '../components/Complete/';
+
+<section className="mdx-page">
+
+## my first mdx file
+
+**Woke forage vinyl coloring book direct trade readymade glossier. Fixie fashion axe stumptown, actually activated charcoal you probably haven't heard of them venmo pinterest mlkshk cray salvia jean shorts.**
+Cardigan humblebrag master cleanse, godard salvia meh small batch you probably haven't heard of them. _Cliche XOXO affogato, blog fixie pitchfork art party humblebrag._
+
+<div className="code">
+
+```js
+const firstName = 'Zenis';
+const lastName = 'Losiuks';
+```
+
+</div>
+
+<div className="nice-text">
+
+<h3>nice text</h3>
+
+<FiInfo className="nice-text-icon" />
+
+Vaporware godard keffiyeh, subway tile kickstarter ethical waistcoat coloring book sustainable taxidermy raw denim franzen intelligentsia. Locavore brunch shabby chic flexitarian, coloring book tousled retro vexillologist pickled subway tile forage pug. Synth semiotics flexitarian, pork belly lomo offal tacos brunch drinking vinegar ethical prism stumptown. Sartorial vaporware palo santo, twee stumptown hammock lomo. Selfies narwhal occupy master cleanse squid hashtag +1 salvia enamel pin. Flexitarian forage synth four loko everyday carry.
+
+</div>
+
+<h2>React Components</h2>
+
+<Counter />
+
+```jsx
+import React from 'react';
+import styled from 'styled-components';
+import { AiOutlineLike } from 'react-icons/ai';
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0);
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  );
+};
+```
+
+<LikeButton />
+
+<h2>video components</h2>
+<RegVideo />
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
+
+</section>
