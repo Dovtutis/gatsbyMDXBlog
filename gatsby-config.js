@@ -5,13 +5,12 @@ module.exports = {
     titleTemplate: `%s | MDX Blog`,
     url: `https://gatsby-mdx-blog-course-project.netlify.app/`,
     image: `mainImg.png`,
-    twitterUsername: `@john_smilga`,
+    twitterUsername: `@dovtutis`,
   },
   plugins: [
-    // `gatsby-plugin-mdx`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
-
+    `gatsby-remark-images`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -31,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        gatsbyRemarkPlugins: [{ resolve: "gatsby-remark-images" }],
+        gatsbyRemarkPlugins: [{ resolve: 'gatsby-remark-images' }],
       },
     },
     {
@@ -40,16 +39,16 @@ module.exports = {
         fonts: {
           google: [
             {
-              family: "Roboto",
-              variants: ["400", "500", "600", "700"],
+              family: 'Roboto',
+              variants: ['400', '500', '600', '700'],
             },
             {
-              family: "Open Sans",
-              variants: ["400", "500", "600", "700"],
+              family: 'Open Sans',
+              variants: ['400', '500', '600', '700'],
             },
           ],
         },
       },
     },
   ],
-}
+};
