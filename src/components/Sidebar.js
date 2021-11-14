@@ -5,7 +5,7 @@ import { IoMdClose } from 'react-icons/io';
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
-    <asside className={`sidebar ${isOpen && 'showSidebar'}`}>
+    <aside className={`sidebar ${isOpen && 'showSidebar'}`}>
       <button className="close-btn" onClick={toggle}>
         <IoMdClose />
       </button>
@@ -14,7 +14,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <Categories />
         </Links>
       </div>
-    </asside>
+    </aside>
   );
 };
 
