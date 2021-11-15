@@ -8,8 +8,7 @@
 
 # About the project
 
-Gatsby MDX blog is a blog webpage which allows user to use JSX in markdown. MDX has no runtime so all compilation occurs during the build stage. 
-It allows us to intercept the components and make changes if needed.
+I am working with Gatsby online course and this is my second study project. Gatsby MDX blog is a blog webpage where all posts are written in MDX. MDX has no runtime so all compilation occurs during the build stage. It also allows us to intercept the components and make changes if needed.
 
 Key features/technologies used in project:
 
